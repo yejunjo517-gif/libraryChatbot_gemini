@@ -43,7 +43,7 @@ except Exception:
 # ================================
 # 4. PDF 경로 및 Chroma 폴더명
 # ================================
-PDF_PATH = r"/mount/src/librarychatbot_gemini/안전한 바다여행_최종.pdf"
+PDF_PATH = r"/mount/src/librarychatbot_gemini/인천 섬 갯벌에 대한 생태적 가치화 방안과 적용.pdf"
 PDF_NAME = os.path.splitext(os.path.basename(PDF_PATH))[0]
 VECTOR_DIR = f"./chroma_db_{PDF_NAME}"
 
@@ -188,7 +188,7 @@ def initialize_components(selected_model):
 # ================================
 # 10. UI
 # ================================
-st.header("🌊 안전한 바다여행 Q&A 챗봇 💬")
+st.header("인천 섬 갯벌에 대한 생태적 가치화 방안과 적용")
 
 if not os.path.exists(VECTOR_DIR):
     st.info("🔄 첫 실행입니다. PDF를 임베딩 중입니다...")
