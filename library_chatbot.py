@@ -98,8 +98,7 @@ def create_vector_store(_docs):
         split_docs,
         embedding=embeddings,
         persist_directory=VECTOR_DIR,
-        collection_name="default",
-        client_settings=client_settings
+        collection_name="default"
     )
 
     st.success("💾 새로운 ChromaDB 저장 완료!")
